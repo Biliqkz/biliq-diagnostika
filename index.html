@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10111a">
+<meta name="description" content="BILIQ математика диагностикасы. 5–11 сынып оқушыларына арналған білім деңгейін анықтау тесті.">
+<title>BILIQ — Математика диагностикасы</title>
+<style>
+:root{--bg:#0d0e15;--panel:#171923;--line:#2a2d3b;--text:#f6f5fb;--muted:#a6a8ba;--purple:#9b83ff;--lime:#d9ff7a;--danger:#ff8e9b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#292044 0,transparent 42%),radial-gradient(ellipse at 100% 25%,#1d3340 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+.wrap{max-width:980px;margin:auto;padding:24px 16px 60px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:36px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.13em}.logo{width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,var(--lime),var(--purple));display:grid;place-items:center;color:#10111a;font-size:22px;font-weight:1000}.pill{border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:var(--muted);font-size:12px;letter-spacing:.08em}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:stretch}.eyebrow{color:var(--lime);font-weight:800;font-size:12px;letter-spacing:.17em;text-transform:uppercase}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-.055em;margin:15px 0}.hero h1 span{color:var(--purple)}.lead{max-width:590px;color:#c5c6d2;font-size:17px}.statrow{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.stat{padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#ffffff06}.stat b{display:block;font-size:17px}.stat small{color:var(--muted)}.side,.card{background:linear-gradient(150deg,#1c1e2b,#141620);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 22px 70px #0003}.side{display:flex;flex-direction:column;justify-content:space-between;min-height:260px}.orb{height:100px;width:100px;border-radius:32px;background:linear-gradient(145deg,var(--lime),var(--purple));display:grid;place-items:center;color:#141620;font-size:43px;box-shadow:0 0 60px #9b83ff25}.side h2{margin:20px 0 8px;font-size:25px;line-height:1.15}.side p{margin:0;color:var(--muted)}.sectionhead{margin:42px 0 16px}.sectionhead h2{margin:0;font-size:27px;letter-spacing:-.03em}.sectionhead p{margin:6px 0;color:var(--muted)}.card{padding:clamp(18px,4vw,30px)}.progressline{height:5px;border-radius:9px;background:#2a2d3b;overflow:hidden;margin:16px 0 24px}.progressline div{height:100%;width:0;background:linear-gradient(90deg,var(--purple),var(--lime));transition:width .25s}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:13px;color:#d6d6e1;font-weight:700}.field input,.field select{width:100%;background:#0e1018;color:var(--text);border:1px solid #353849;border-radius:12px;padding:13px 14px;font:inherit;outline:none}.field input:focus,.field select:focus{border-color:var(--purple);box-shadow:0 0 0 3px #9b83ff20}.hint{font-size:12px;color:var(--muted)}.btn{border:0;border-radius:13px;padding:13px 18px;font:inherit;font-weight:800;cursor:pointer;transition:transform .15s,opacity .15s}.btn:hover{transform:translateY(-1px)}.primary{background:var(--lime);color:#11131b}.secondary{background:#242636;color:var(--text);border:1px solid #383b4d}.actions{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;margin-top:22px}.question{padding:19px 0;border-bottom:1px solid var(--line)}.question:last-child{border-bottom:0}.qtitle{font-weight:800;font-size:17px;margin:0 0 13px}.qmeta{color:var(--muted);font-size:12px;margin-bottom:5px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:9px}.answer{display:flex;gap:10px;align-items:center;padding:12px;border:1px solid #353849;border-radius:12px;background:#10121b;cursor:pointer}.answer:has(input:checked){border-color:var(--purple);background:#9b83ff12}.answer input{accent-color:var(--purple)}.hidden{display:none!important}.resultscore{font-size:54px;font-weight:950;letter-spacing:-.05em;color:var(--lime)}.resultgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.resultbox{border:1px solid var(--line);background:#10121b;border-radius:16px;padding:16px}.resultbox small{color:var(--muted);display:block}.topicrow{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:10px 0}.topicrow:last-child{border:0}.notice{padding:12px 14px;border-radius:12px;background:#9b83ff12;border:1px solid #9b83ff40;color:#d9d2ff;font-size:13px}.error{color:var(--danger);font-size:13px;margin-top:8px}.qrwrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.qrbox{width:180px;height:180px;background:white;border-radius:12px;display:grid;place-items:center;padding:8px}.qrbox img{width:100%;height:100%;object-fit:contain}.footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.consent{display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:12px;margin-top:14px}.consent input{margin-top:4px;accent-color:var(--purple)}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.side{min-height:210px}.grid,.resultgrid{grid-template-columns:1fr}.top{margin-bottom:25px}.answers{grid-template-columns:1fr 1fr}.wrap{padding:18px 13px 40px}.card{border-radius:19px}}@media(max-width:380px){.answers{grid-template-columns:1fr}.pill{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><div class="logo">B</div><span>BILIQ</span></div><div class="pill">БІЛІМ IQ · ДИАГНОСТИКА</div></header>
+<section class="hero">
+<div><div class="eyebrow">Математика · 5–11 сынып</div><h1>Біліміңді<br><span>нақты таны.</span></h1><p class="lead">Қысқа диагностикадан өтіп, математикадағы мықты тұстарың мен қайталау керек тақырыптарыңды анықта. Бұл — баға емес, келесі қадамыңды түсінуге арналған құрал.</p><div class="statrow"><div class="stat"><b>12 сұрақ</b><small>Негізгі тақырыптар</small></div><div class="stat"><b>8–12 минут</b><small>Шамамен уақыт</small></div><div class="stat"><b>Тегін</b><small>Онлайн диагностика</small></div></div></div>
+<aside class="side"><div class="orb">∑</div><div><h2>Деңгейіңді тексер.</h2><p>Асықпай ойлан. Әр жауаптан кейін тест жалғасады, соңында нәтижеңді көресің.</p></div></aside>
+</section>
+<div class="sectionhead"><h2>Бастау үшін</h2><p>Ақпаратты дұрыс енгіз — нәтижені BILIQ командасы саған байланыстыра алады.</p></div>
+<section class="card" id="profile">
+<div class="grid">
+<div class="field"><label for="fullname">Оқушының аты-жөні *</label><input id="fullname" autocomplete="name" placeholder="Мысалы, Айдана Нұрланқызы" required maxlength="100"></div>
+<div class="field"><label for="phone">Телефон нөмірі *</label><input id="phone" type="tel" autocomplete="tel" placeholder="+7 7XX XXX XX XX" required maxlength="20"><span class="hint">Нәтижені талқылау үшін байланыс нөмірі.</span></div>
+<div class="field"><label for="grade">Сыныбы *</label><select id="grade" required><option value="">Сыныпты таңда</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select></div>
+<div class="field"><label for="language">Тест тілі</label><select id="language"><option>Қазақша</option><option>Русский</option></select><span class="hint">Қазір тест сұрақтары қазақ тілінде.</span></div>
+</div>
+<label class="consent"><input type="checkbox" id="consent"><span>Мен осы мәліметтерді BILIQ диагностикасын өткізу және нәтижені талқылау үшін өңдеуге келісемін. Ақпарат осы мақсатта ғана пайдаланылуы тиіс.</span></label>
+<div id="profileError" class="error hidden"></div>
+<div class="actions"><span class="hint">* Міндетті өрістер</span><button class="btn primary" id="startBtn">Диагностиканы бастау ↗</button></div>
+</section>
+<div id="testSection" class="hidden">
+<div class="sectionhead"><h2>Математика диагностикасы</h2><p id="progressText">1 / 12 сұрақ</p></div>
+<section class="card"><div class="progressline"><div id="progressBar"></div></div><div id="questions"></div><div class="actions"><button class="btn secondary" id="prevBtn">← Артқа</button><button class="btn primary" id="nextBtn">Келесі сұрақ →</button></div><div id="testError" class="error hidden"></div></section>
+</div>
+<div id="resultSection" class="hidden">
+<div class="sectionhead"><h2>Сенің нәтижең</h2><p>Нәтиже — қай тақырыпқа көңіл бөлу керегін көрсететін бастапқы бағдар.</p></div>
+<section class="card"><div class="eyebrow">BILIQ · DIAGNOSTIC REPORT</div><div id="score" class="resultscore">0/12</div><h2 id="levelTitle">Нәтиже дайын</h2><p id="levelText" class="lead"></p><div class="resultgrid"><div class="resultbox"><small>Дұрыс жауап</small><b id="correctCount">—</b></div><div class="resultbox"><small>Сынып</small><b id="gradeResult">—</b></div></div><h3>Тақырыптар бойынша</h3><div id="topicResults"></div><div id="submitStatus" class="notice" style="margin-top:18px">Нәтиже жіберілуге дайындалып жатыр…</div><div class="actions"><button class="btn primary" onclick="window.print()">Нәтижені сақтау / PDF</button><button class="btn secondary" id="restartBtn">Қайта бастау</button></div></section>
+</div>
+<div class="sectionhead"><h2>Instagram-ға арналған QR-код</h2><p>Сайт жарияланғаннан кейін осы блокта нақты сілтемеге арналған QR пайда болады.</p></div>
+<section class="card"><div class="qrwrap"><div class="qrbox"><img id="qrImage" alt="Осы сайтқа арналған QR-код"></div><div style="flex:1;min-width:210px"><h3 style="margin-top:0">BILIQ диагностикасы</h3><p class="lead" style="font-size:14px">Осы беттің сілтемесін QR-кодқа айналдырады. Сайтты Netlify-ға жариялаған соң осы бетті ашып, QR-ды жүктеп алып, Instagram профиліне немесе Stories-ке орналастыр.</p><button class="btn primary" id="downloadQr">QR-кодты жүктеу ↓</button><p class="hint" id="qrUrl" style="overflow-wrap:anywhere"></p></div></div></section>
+<footer class="footer">© BILIQ · Білім орталығы · Алматы. Диагностика оқу деңгейін бастапқы бағалауға арналған; ресми емтихан немесе мектеп бағасы болып саналмайды.</footer>
+</div>
+<script>
+const QUESTIONS = [
+{topic:"Арифметика",q:"48 ÷ 6 + 7 өрнегінің мәні қандай?",a:["15","8","14","56"],correct:0},
+{topic:"Бөлшектер",q:"1/2 + 1/4 нешеге тең?",a:["2/6","3/4","1/4","1"],correct:1},
+{topic:"Пайыз",q:"450 санының 20%-ы қанша?",a:["45","80","90","120"],correct:2},
+{topic:"Теңдеулер",q:"3x + 5 = 20 болса, x нешеге тең?",a:["3","5","8","15"],correct:1},
+{topic:"Пропорция",q:"4 дәптер 800 тг тұрса, 7 дәптер қанша тұрады?",a:["1 200 тг","1 400 тг","1 600 тг","2 000 тг"],correct:1},
+{topic:"Геометрия",q:"Ұзындығы 8 см, ені 5 см тіктөртбұрыштың ауданы?",a:["13 см²","26 см²","40 см²","80 см²"],correct:2},
+{topic:"Теріс сандар",q:"−7 + 12 мәні қандай?",a:["−19","−5","5","19"],correct:2},
+{topic:"Дәреже",q:"2³ × 2² өрнегі неге тең?",a:["2⁵ = 32","2⁶ = 64","4⁵ = 1024","16"],correct:0},
+{topic:"Алгебра",q:"x² − 9 өрнегін көбейткіштерге жікте.",a:["(x−9)(x+1)","(x−3)(x+3)","(x−3)²","x(x−9)"],correct:1},
+{topic:"Функция",q:"y = 2x − 1 болса, x = 4 кезіндегі y мәні?",a:["6","7","8","9"],correct:1},
+{topic:"Ықтималдық",q:"Қорапта 3 қызыл, 2 көк шар бар. Кездейсоқ алынған шардың қызыл болу ықтималдығы?",a:["2/5","1/2","3/5","3/2"],correct:2},
+{topic:"Квадрат теңдеу",q:"x² = 49 теңдеуінің шешімдері қандай?",a:["Тек 7","Тек −7","−7 және 7","49 және −49"],correct:2}
+];
+let current=0, answers=Array(QUESTIONS.length).fill(null), student=null, report=null;
+const $=id=>document.getElementById(id);
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function renderQuestion(){
+ const q=QUESTIONS[current]; $('progressText').textContent=`${current+1} / ${QUESTIONS.length} сұрақ`;
+ $('progressBar').style.width=`${(current+1)/QUESTIONS.length*100}%`;
+ $('questions').innerHTML=`<div class="qmeta">ТАҚЫРЫП · ${escapeHtml(q.topic)}</div><h3 class="qtitle">${current+1}. ${escapeHtml(q.q)}</h3><div class="answers">${q.a.map((a,i)=>`<label class="answer"><input type="radio" name="answer" value="${i}" ${answers[current]===i?'checked':''}><span>${escapeHtml(a)}</span></label>`).join('')}</div>`;
+ $('prevBtn').style.visibility=current===0?'hidden':'visible'; $('nextBtn').textContent=current===QUESTIONS.length-1?'Нәтижені көру ✓':'Келесі сұрақ →'; $('testError').classList.add('hidden');
+}
+$('startBtn').addEventListener('click',()=>{
+ const name=$('fullname').value.trim(), phone=$('phone').value.trim(), grade=$('grade').value;
+ const err=$('profileError');err.classList.add('hidden');
+ if(name.length<3||!/[A-Za-zА-Яа-яӘәІіҢңҒғҮүҰұҚқӨөҺһ]/.test(name)){err.textContent='Аты-жөніңді толық енгіз.';err.classList.remove('hidden');return;}
+ if(phone.replace(/\D/g,'').length<10){err.textContent='Телефон нөмірін дұрыс енгіз.';err.classList.remove('hidden');return;}
+ if(!grade){err.textContent='Сыныбыңды таңда.';err.classList.remove('hidden');return;}
+ if(!$('consent').checked){err.textContent='Жалғастыру үшін мәліметтерді өңдеуге келісім қажет.';err.classList.remove('hidden');return;}
+ student={name,phone,grade,language:$('language').value}; $('profile').classList.add('hidden');$('testSection').classList.remove('hidden');$('testSection').scrollIntoView({behavior:'smooth'});renderQuestion();
+});
+$('prevBtn').addEventListener('click',()=>{if(current>0){current--;renderQuestion();}});
+$('nextBtn').addEventListener('click',async()=>{
+ const picked=document.querySelector('input[name="answer"]:checked');if(picked)answers[current]=Number(picked.value);
+ if(answers[current]===null){$('testError').textContent='Жалғастыру үшін жауап нұсқасын таңда.';$('testError').classList.remove('hidden');return;}
+ if(current<QUESTIONS.length-1){current++;renderQuestion();return;}
+ await finishTest();
+});
+async function finishTest(){
+ const correct=answers.reduce((n,a,i)=>n+(a===QUESTIONS[i].correct?1:0),0);
+ const topics={};QUESTIONS.forEach((q,i)=>{if(!topics[q.topic])topics[q.topic]={got:0,total:0};topics[q.topic].total++;if(answers[i]===q.correct)topics[q.topic].got++;});
+ const pct=Math.round(correct/QUESTIONS.length*100);
+ let title=pct>=80?'Мықты база!':pct>=55?'Жақсы бастама!':'Өсуге жақсы мүмкіндік бар';
+ let text=pct>=80?'Негізгі сұрақтарды жақсы орындадың. Енді күрделі есептер мен терең түсінуді дамытуға көңіл бөл.':pct>=55?'Бірқатар тақырыптар жақсы қалыптасқан. Қате кеткен тақырыптарды жүйелі қайталау нәтижені көтереді.':'Бұл бастапқы диагностика. Қателерді талдап, негізгі тақырыптарды ретімен қайталау пайдалы болады.';
+ report={score:correct,total:QUESTIONS.length,percent:pct,title,topics,answers:answers.map((a,i)=>({topic:QUESTIONS[i].topic,question:QUESTIONS[i].q,answer:a===null?'Жауап жоқ':QUESTIONS[i].a[a],correct:QUESTIONS[i].a[QUESTIONS[i].correct],isCorrect:a===QUESTIONS[i].correct}))};
+ $('testSection').classList.add('hidden');$('resultSection').classList.remove('hidden');$('score').textContent=`${correct}/${QUESTIONS.length}`;$('levelTitle').textContent=title;$('levelText').textContent=text;$('correctCount').textContent=`${correct} / ${QUESTIONS.length} (${pct}%)`;$('gradeResult').textContent=student.grade+' сынып';
+ $('topicResults').innerHTML=Object.entries(topics).map(([name,v])=>`<div class="topicrow"><span>${escapeHtml(name)}</span><b>${v.got}/${v.total}</b></div>`).join('');
+ $('resultSection').scrollIntoView({behavior:'smooth'});
+ const status=$('submitStatus');status.textContent='Нәтиже серверге жіберілуде…';
+ try{
+  const res=await fetch('/api/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({student,report,source:'BILIQ Instagram diagnostic',submittedAt:new Date().toISOString()})});
+  const data=await res.json().catch(()=>({}));
+  if(res.ok&&data.ok){status.textContent='Нәтиже BILIQ командасына жіберілді. Рақмет!';}
+  else {status.textContent='Тест аяқталды. Серверге жіберу бапталмаған болуы мүмкін. Әзірге нәтижені PDF ретінде сақтап қой.';}
+ }catch(e){status.textContent='Тест аяқталды, бірақ жіберу сервері қолжетімсіз. Netlify баптауларын тексеру қажет.';}
+}
+$('restartBtn').addEventListener('click',()=>location.reload());
+function setupQR(){
+ const url=location.href.split('#')[0];$('qrUrl').textContent=url;
+ // Uses a QR image endpoint for convenience; no student data is encoded, only the page URL.
+ $('qrImage').src='https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=12&data='+encodeURIComponent(url);
+}
+$('downloadQr').addEventListener('click',()=>{
+ const url=$('qrImage').src;const a=document.createElement('a');a.href=url;a.download='BILIQ-diagnostika-QR.png';a.target='_blank';a.rel='noopener';a.click();
+});
+setupQR();
+</script>
+</body></html>
